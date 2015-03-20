@@ -1,0 +1,102 @@
+.red {
+  color: red;
+  background: red;
+}
+.blue {
+  color: blue;
+  background: blue;
+}
+.green {
+  color: green;
+  background: green;
+}
+.h100 {
+  height: 100px!important;
+}
+.h150 {
+  height: 150px!important;
+}
+.h200 {
+  height: 200px!important;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-table;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.category {
+  width: 100%;
+}
+.category .cat-item {
+  width: 25%;
+  font-size: 0;
+  height: 130px;
+  float: left;
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+.bdy {
+  background-color: #DDD;
+  height: 1000px;
+  padding: 23px 18px 18px;
+}
+.bdy .title {
+  text-indent: 20px;
+  line-height: 22px;
+  font-size: 22px;
+}
+.bdy .title:before {
+  content: ' ';
+  display: inline-block;
+  width: 7px;
+  height: 24px;
+  background-color: red;
+  position: relative;
+  top: 4px;
+  left: -20px;
+}
+.bdy ul,
+.bdy li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.bdy .bdy-item-group {
+  width: 48%;
+  margin-top: 20px;
+  float: left;
+}
+.bdy .bdy-item-group.list1 {
+  margin-right: 1%;
+}
+.bdy .bdy-item-group.list2 {
+  margin-left: 1%;
+}
+.bdy .bdy-item {
+  width: 100%;
+  height: 300px;
+  margin: 5px;
+}
+@media only screen and (min-width: 459px) {
+  .category .cat-item {
+    height: 200px;
+  }
+}
