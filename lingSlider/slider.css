@@ -1,0 +1,59 @@
+.news ul, .news li{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.news ul{
+    width: 1000000px;
+    position: relative;
+}
+
+.news {
+    width: 954px;
+    height: 122px;
+    border: 2px solid #ffee5d;
+    border-radius: 2px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.news .folder {
+    width: 954px;
+    height: 26px;
+    filter: alpha(opacity=50);
+    position: absolute;
+    bottom: 0px;
+}
+.news .folder a{
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 26px;
+}
+.news .folder span {
+    /*for ie7*/
+    float: left;
+    text-indent: 20px; }
+.news .folder #change {
+    position: absolute; }
+.news .folder #change_btn {
+    float: right;
+    margin: 3px 5px 0px 0px; }
+.news .folder #change_btn a {
+    float: left;
+    width: 20px;
+    opacity: 0.7;
+    height: 20px;
+    background: url("http://hongyan.cqupt.edu.cn/welcome/2014/Public/home/style/style_img/content_icon.png") no-repeat left -153px; }
+.news .folder #change_btn a.next {
+    margin-left: 5px;
+    background: url("http://hongyan.cqupt.edu.cn/welcome/2014/Public/home/style/style_img/content_icon.png") no-repeat left -30px;
+    opacity: 0.7;
+}
+.news .folder #change_btn a.next:hover, .news .folder #change_btn a.prev:hover {
+    opacity: 1;
+    filter: alpha(opacity=70); }
+
+.news-item{
+    float: left;
+}

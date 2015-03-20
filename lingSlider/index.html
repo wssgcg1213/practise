@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>slider demo</title>
+    <link rel="stylesheet" href="slider.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="news">
+        <ul>
+            <li class="news-item">
+                <a href="http://www.baidu.com/">
+                    <img src="http://hongyan.cqupt.edu.cn/welcome/2014/Public/home/images/xdf.jpg">
+                </a>
+            </li>
+            <li class="news-item">
+                <a href="http://www.baidu.com/">
+                    <img src="http://hongyan.cqupt.edu.cn/welcome/2014/Public/home/images/xdf.jpg">
+                </a>
+            </li>
+            <li class="news-item">
+                <a href="http://www.baidu.com/">
+                    <img src="http://hongyan.cqupt.edu.cn/welcome/2014/Public/home/images/xdf.jpg">
+                </a>
+            </li>
+            <li class="news-item">
+                <a href="http://www.baidu.com/">
+                    <img src="http://hongyan.cqupt.edu.cn/welcome/2014/Public/home/images/xdf.jpg">
+                </a>
+            </li>
+        </ul>
+        <div class="folder">
+            <div id="change_btn" class="clear">
+                <a class="prev" href="##"></a>
+                <a class="next" href="##"></a>
+            </div>
+        </div>
+    </div>
+    <div>当前是第<span id="page">1</span>页</div>
+</div>
+<script src="http://hongyan.cqupt.edu.cn/cdn/js/jquery-1.7.2.js"></script>
+<script src="lingSlider.jqplugin.js"></script>
+<script>
+    $('.news').slider({
+        prev: $('.prev'),
+        next: $('.next'),
+        interval: 3000,
+        pageContainer: $('#page')
+    });
+</script>
+</body>
+</html>
